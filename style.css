@@ -409,12 +409,40 @@ header {
 /* yaha per hamare award winning ki setyling shuru ho rahi he  */
 #award-section {
   height: 100vh;
-  background-color: white;
+  background-color: #EFF1F5;
   padding: 3em;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: center;
+}
+.award-section-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+  .award-pera1{
+    color: #f84e77;
+  }
+  .award-pera2{
+    color: #0a1b4c;
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .award-portion{
+    display: flex;
+    width: 35%;
+    justify-content: space-around;
+  }
+  .award-portion>a{
+    background-color: white;
+    padding: 1em 2em 1em 2em;
+    text-decoration: none;
+    color: black;
+  }
+.award-details{
+  background-color: white;
 }
 
 /* Yaha per hamare award winning section ki styling ki ho rahi he  */
