@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kpiz</title>
+    <link rel="shortcut icon" href="./Assets/fav.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.8-dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <!-- yaha se hamare header ki shuruat ho rahi he  -->
+    <header>
+      <div id="header-div">
+        <!-- pehle hum header ka jo top portion he wo banayenge uske liye mene bootstrap se alert utaya he usme changes ki / -->
+        <div id="header-top" class="alert alert-primary">
+          <div>
+            <span class="header-top-span">
+              <img src="./Assets/Navbar/mapicon.svg" alt="icon" /> 189 Akdy
+              Street, Madis, KJ 08033
+            </span>
+            <span class="header-top-span">
+              <img src="./Assets/Navbar/phoneicon.svg" alt="icon" /> (+123) 456
+              6896 685</span
+            >
+          </div>
+          <div>
+            <span class="header-top-span">
+              <img
+                src="./Assets/Navbar/mailicon.svg"
+                alt=""
+              />support@kbiz.com</span
+            >
+            <span class="header-top-span">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i> </a>
+              <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </span>
+          </div>
+        </div>
+        <!-- yaha per header ka top end ho raha he  -->
+
+        <!-- yaha se jum navbar banayenge wo b humne bootstrip se utaya he  -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid container">
+            <a class="navbar-brand" href="#">Kbiz</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="collapse navbar-collapse nav-div"
+              id="navbarSupportedContent"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Elements</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button
+                  id="btn-get-started"
+                  class="btn btn-outline-success"
+                  type="submit"
+                >
+                  Get Started
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- yaha per hamara jo navbar he wo end hota he  -->
+    <!-- yaha se hum main section start karenge  -->
+    <main>
+      <!-- main section me hamare pas pehle home section he  -->
+      <section id="home-section" class="container-fluid">
+        <div class="home-div">
+          <p class="home-pera1">
+            Kbiz is <br />
+            The Software for your Businuss.
+          </p>
+          <p class="home-pera2">
+            So i said down the pub argy burdy such a fibber bonet <br />victoria
+            sponge porkies
+          </p>
+          <button class="home-btn">Discover more</button>
+        </div>
+
+        <div class="home-div">
+          <div id="play-icon-div">
+            <div id="play-icon">
+              <img src="./Assets/Home-section/playicon" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- yaha per home section ka end hota he  -->
+
+      <!-- yaha se hum modern business section ki structuring shuru karenge  -->
+      <section id="modern-business" class="container-fluid">
+        <div class="business">
+          <div>
+            <p class="section-name">Modern Business</p>
+            <p class="section-heading">
+              Lets Take Your <br />
+              Experience next level
+            </p>
+          </div>
+          <button class="business-btn">See All Services</button>
+        </div>
+        <div class="business">
+          <div class="business-boxes">
+            <img class="boxes" src="./Assets/Modern-business/1.svg" alt="" />
+            <p>
+              Design & <br />
+              Development
+            </p>
+            <img
+              class="arrow"
+              src="./Assets/Modern-business/arrow.svg"
+              alt=""
+            />
+          </div>
+          <div class="business-boxes">
+            <img class="boxes" src="./Assets/Modern-business/2.svg" alt="" />
+            <p>Finance <br />Consulting</p>
+            <img
+              class="arrow"
+              src="./Assets/Modern-business/arrow.svg"
+              alt=""
+            />
+          </div>
+          <div class="business-boxes">
+            <img class="boxes" src="./Assets/Modern-business/3.svg" alt="" />
+            <p>
+              Audit & <br />
+              Assurance
+            </p>
+            <img
+              class="arrow"
+              src="./Assets/Modern-business/arrow.svg"
+              alt=""
+            />
+          </div>
+          <div id="business-box" class="business-boxes">
+            <img class="boxes" src="./Assets/Modern-business/4.svg" alt="" />
+            <p>
+              User Interface <br />
+              Design
+            </p>
+            <img
+              class="arrow"
+              src="./Assets/Modern-business/arrow.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <!-- yaha per is section jo k modern business ka section he uski structuring end ho chuki he  -->
+
+      <!-- yaha per hum about k section ki structuring ko shuru karenge  -->
+      <section id="about-section" class="container-fluid">
+        <div id="about-pic-div" class="about-div">
+          <div id="div-experience">
+            <h1>1997</h1>
+            <p>25+ years of experience.</p>
+          </div>
+        </div>
+        <div class="about-div">
+          <p class="section-name">About Our Company</p>
+          <p class="section-heading">The assistant <br />for your business</p>
+          <p class="section-subheading">I'm a subhead that ges with a story.</p>
+          <div class="about-spans-div">
+            <span>
+              <h2>94%</h2>
+              <p>Agency increased revenue around 94% with kbiz.</p>
+            </span>
+            <span>
+              <h2>100+</h2>
+              <p>Components make any design stand out.</p>
+            </span>
+          </div>
+          <a href="#"
+            ><button class="about-btn">What is a VA exactly</button></a
+          >
+        </div>
+      </section>
+      <!-- yaha per about  section ki structuring puri hoty he  -->
+
+      <section id="case-section">
+        <div id="case">
+          <div class="case-div">
+            <p id="case-section-name" >Our Case Studies</p>
+          <p id="case-section-heading">Modern Case Studies</p>
+          </div>
+          <a href="#"><button class="case-section-btn">See All Portfolio</button></a>
+        </div>
+        <div id="case-studies-boxes">
+          <div class="case-studies case1">
+            <p>Business Strategy</p>
+            <h2>Tips for <br> Maintaining a <br> Positive Attitude</h2>
+            <img src="./Assets/Case-studies/shape.png" alt="">
+          </div>
+          <div class="case-studies case2">
+            <p>Design Phase</p>
+            <h2>Initial Consept and <br> Design Phase</h2>
+            <img src="./Assets/Case-studies/shape.png" alt="">
+          </div>
+          <div class="case-studies case3">
+            <p>UX Leadership</p>
+            <h2>Kbix Template for <br> Startup's and <br> beyond.</h2>
+            <img src="./Assets/Case-studies/shape.png" alt="">
+          </div>
+          <div class="case-studies case4">
+            <p>Analytics</p>
+            <h2>Business Insight <br> and <br> Analytics</h2>
+            <img src="./Assets/Case-studies/shape.png" alt="">
+          </div>
+          <div class="case-studies case5">
+            <p>Business Strategy</p>
+            <h2>Tips for <br> Maintaining a <br> Positive Attitude</h2>
+            <img src="./Assets/Case-studies/shape.png" alt="">
+          </div>
+          <div class="case-studies case6">
+            <p>Management</p>
+            <h2>Exceptional <br> Execution <br>for the Business</h2>
+            <img src="./Assets/Case-studies/shape.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section id="award-section">
+        <div>
+          <p>Award Winning</p>
+          <p>Display your content inside of tab components.</p>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p>Team Members</p>
+          <p>The Management Team</p>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p>The FAQs</p>
+          <p>Frequently asked questions</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>Our Clients World-class protectiont.</p>
+          <p>Over 50K+ agents trust KBiz.</p>
+        </div>
+      </section>
+      <section>
+        <div>
+          <p>Clients Testimonials</p>
+          <p>Some professionals talking about the course</p>
+        </div>
+        <div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </section>
+
+      <section>
+        <div>
+          <p>Who Works Remotly to help with your business</p>
+          <a href="#"><button>Get Started for Free</button></a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div id="footer-div">
+        <div class="footer-links">
+          <p>
+            Beguiled and to demo realized by the <br />
+            charms of pleasure moment.
+          </p>
+          <form action="#">
+            <input type="email" id="email" placeholder="Email Address" />
+            <input type="submit" value="Subscribe" />
+          </form>
+          <p>We'll never share your details.</p>
+        </div>
+        <div id="soloution" class="footer-links">
+          <p>Solutions</p>
+          <a href="#">Careers</a>
+          <a href="#">Affiliate Program</a>
+          <a href="#">Process</a>
+          <a href="#">Enterprise</a>
+          <a href="#">Analytics</a>
+          <a href="#">Case stories</a>
+          <a href="#">Agency</a>
+          <a href="#">Support</a>
+          <a href="#">Testimonials</a>
+          <a href="#">News</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="footer-links">
+          <p>Contact</p>
+          <a href="#">+(462) 425 76 332</a>
+          <a href="mailto:info@yourdmain.com">info@yourdmain.com</a>
+          <p>480 Williams K Qanning Blvd, <br />Falls MA 3725, USA.</p>
+        </div>
+      </div>
+      <p>@ 2021 All Copyright Reserved. Developed by BackTheme</p>
+    </footer>
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
