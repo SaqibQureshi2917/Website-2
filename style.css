@@ -56,7 +56,7 @@ header {
 }
 /* yaha per navbar ki styling end hoty he  */
 #home-section {
-  /* height: 100vh; */
+  height: 100vh;
   width: 100%;
   background-image: url(./Assets/Home-section/home-slider11.png);
   background-size: cover;
@@ -302,7 +302,7 @@ header {
   margin-bottom: 1em;
   transition: all 0.3s ease-in;
 }
-.case-section-btn:hover{
+.case-section-btn:hover {
   color: white;
   background-color: #f84e77;
 }
@@ -408,44 +408,257 @@ header {
 
 /* yaha per hamare award winning ki setyling shuru ho rahi he  */
 #award-section {
-  height: 100vh;
-  background-color: #EFF1F5;
-  padding: 3em;
+  /* height: 150vh; */
+  background-color: #eff1f5;
+  padding: 5em;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: space-around;
   align-items: center;
 }
-.award-section-content{
+.award-section-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-  .award-pera1{
-    color: #f84e77;
-  }
-  .award-pera2{
-    color: #0a1b4c;
-    font-size: 3rem;
-    font-weight: 700;
-  }
-  .award-portion{
-    display: flex;
-    width: 35%;
-    justify-content: space-around;
-  }
-  .award-portion>a{
-    background-color: white;
-    padding: 1em 2em 1em 2em;
-    text-decoration: none;
-    color: black;
-  }
-.award-details{
+.award-pera1 {
+  color: #f84e77;
+}
+.award-pera2 {
+  color: #0a1b4c;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.award-portion {
+  display: flex;
+  width: 35%;
+  justify-content: space-around;
+}
+.award-portion > a {
   background-color: white;
+  padding: 1em 2em 1em 2em;
+  text-decoration: none;
+  color: black;
+  transition: all 0.6s ease;
+}
+.award-portion > a:hover {
+  background-color: #f84e77;
+  color: white;
+}
+.award-details {
+  background-color: white;
+  display: flex;
+  height: 50em;
+  width: 60%;
+  margin-top: 2rem;
+}
+.award-details-left-side {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 8em 3em 0 3em;
+}
+.award-detail-right-side {
+  width: 50%;
+  height: 50em;
+}
+.award-detail-right-side > img {
+  height: 100%;
+}
+/* Yaha per hamare award winning section ki styling ki ho rahi he  */
+
+/* yaha se team mamber section k styling ki shuruat hoty he  */
+#team-members-section {
+  height: 110vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 5rem;
+}
+.team-section-div1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team-div {
+  display: flex;
+  width: 70%;
+  height: 800px;
+}
+/* ye chatgpt part  */
+.team-div {
+  display: flex;
+  gap: 20px;
 }
 
-/* Yaha per hamare award winning section ki styling ki ho rahi he  */
+.team-members-div {
+  position: relative;
+  width: 35%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.member1 {
+  background-image: url(./Assets/team-members/1.jpeg);
+  background-size: cover;
+}
+.member2 {
+  background-image: url(./Assets/team-members/2.jpeg);
+background-size: cover;
+}
+.member3 {
+  background-image: url(./Assets/team-members/3.jpeg);
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* dark shade */
+  transition: 0.5s ease;
+}
+
+.content {
+  position: absolute;
+  bottom: 20px;
+  left: 30%;
+  color: #fff;
+  transition: 0.5s ease;
+}
+
+.icons {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 15px;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.icons a {
+  color: white;
+  font-size: 18px;
+}
+
+/* Hover Effects */
+.team-members-div:hover .overlay {
+  background: rgba(0, 0, 0, 0); /* image becomes clearer */
+}
+
+.team-members-div:hover .content {
+  bottom: 10%;
+  opacity: 0; /* text slides up and disappears */
+}
+
+.team-members-div:hover .icons {
+  bottom: 30px;
+  opacity: 1; /* icons appear */
+}
+
+/* yaha tak  */
+#faqs-section{
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.faqs-nevigation-div{
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+}
+.quick-nevigation{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(172, 169, 169);
+  width: 30%;
+  background-color: #F0F1F5;
+  margin: 2rem;
+}
+.quick-nevigation>p{
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: 600;
+}
+.quick-nevigation>a{
+  text-decoration: none;
+  color: black;
+  border: 1px solid rgb(213, 211, 211);
+  padding: 1rem;
+}
+
+/* acordian section  */
+.accordion {
+  background-color: white;
+  color: #333;
+  cursor: pointer;
+  padding: 29px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordion:hover {
+  background: #f0f0f0;
+}
+
+.accordion:after {
+  content: "\25BC"; /* ↓ arrow */
+  font-size: 14px;
+  transition: transform 0.3s;
+}
+
+.accordion.active:after {
+  transform: rotate(180deg);
+}
+
+.panel {
+  padding: 0 16px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease-out;
+  background: #fafafa;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-radius: 0 0 6px 6px;
+}
+
+.panel p {
+  padding: 12px 0;
+  margin: 0;
+  color: #555;
+  text-transform: capitalize;
+}
+.accordion-item {
+  padding: 20px;
+  margin-left: 20px;
+}                            
+/* acordian :end  */
+
+
 footer {
   position: sticky;
   bottom: 0;

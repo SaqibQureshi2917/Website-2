@@ -312,28 +312,149 @@
           <a href="#">Financial Audit</a>
         </div>
         <div class="award-details">
-
+          <div class="award-details-left-side">
+            <p class="award-details-pera1">
+              Dedicated Customer <br />
+              Success Team
+            </p>
+            <p class="award-details-pera1">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit sed do
+              eiusmod tempor incididunt
+            </p>
+            <p class="award-checkbox">
+              <input type="checkbox" name="" checked /> Project strategy
+            </p>
+            <p class="award-checkbox">
+              <input type="checkbox" name="" checked /> Accurate coding
+              (development)
+            </p>
+            <p class="award-checkbox">
+              <input type="checkbox" name="" checked /> Creative front end
+            </p>
+            <p class="award-checkbox">
+              <input type="checkbox" name="" checked /> User interface design
+              (UI)
+            </p>
+            <p class="award-checkbox">
+              <input type="checkbox" name="" checked /> Interaction design
+            </p>
+          </div>
+          <div class="award-detail-right-side">
+            <img src="./Assets/tab2.webp" alt="" />
+          </div>
         </div>
       </section>
 
-      <section>
-        <div>
-          <p>Team Members</p>
-          <p>The Management Team</p>
+      <section id="team-members-section">
+        <div class="team-section-div1">
+          <p class="award-pera1">Team Members</p>
+          <p class="award-pera2">The Management Team</p>
         </div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
+
+        <div class="team-div">
+          <div class="team-members-div member1">
+            <div class="overlay"></div>
+            <div class="content">
+              <h3>John Doe</h3>
+              <p>Web Developer</p>
+            </div>
+            <div class="icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="team-members-div member2">
+            <div class="overlay"></div>
+            <div class="content">
+              <h3>Jane Smith</h3>
+              <p>UI/UX Designer</p>
+            </div>
+            <div class="icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+
+          <div class="team-members-div member3">
+            <div class="overlay"></div>
+            <div class="content">
+              <h3>Alex Brown</h3>
+              <p>Project Manager</p>
+            </div>
+            <div class="icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section>
+      <section id="faqs-section">
         <div>
-          <p>The FAQs</p>
-          <p>Frequently asked questions</p>
+          <p class="award-pera1">The FAQs</p>
+          <p class="award-pera2">Frequently asked questions</p>
+        </div>
+        <div class="faqs-nevigation-div">
+          <div class="quick-nevigation">
+            <p>Quick Navigation</p>
+            <a href="#">What We Do</a>
+            <a href="#"> Customer Support</a>
+            <a href="#">Pricing & Support</a>
+            <a href="#">IT Solution</a>
+          </div>
+          <div class="accordian-div">
+              <button class="accordion">
+                1. How do we certify digitized receipts?
+              </button>
+              <div class="panel">
+                <p>
+                  The full monty cracking goal a blinding shot victoria sponge gutted mate. Amongst codswallop squiffy lost the plot up the duff lavatory barmy a blinding shot, such a fibber easy peasy cracking goal give.
+                </p>
+              </div>
+
+              <button class="accordion">
+                2. Website & Mobile app design
+              </button>
+              <div class="panel">
+                <p>
+                  The full monty cracking goal a blinding shot victoria sponge gutted mate. Amongst codswallop squiffy lost the plot up the duff lavatory barmy a blinding shot, such a fibber easy peasy cracking goal give.
+                </p>
+              </div>
+
+              <button class="accordion">
+                3. What do I need to get started?
+              </button>
+              <div class="panel">
+                <p>
+                  The full monty cracking goal a blinding shot victoria sponge gutted mate. Amongst codswallop squiffy lost the plot up the duff lavatory barmy a blinding shot, such a fibber easy peasy cracking goal give.
+                </p>
+              </div>
+
+              <button class="accordion">
+                4. How many websites can I use Kbiz in?
+              </button>
+              <div class="panel">
+                <p>
+                  The full monty cracking goal a blinding shot victoria sponge gutted mate. Amongst codswallop squiffy lost the plot up the duff lavatory barmy a blinding shot, such a fibber easy peasy cracking goal give.
+                </p>
+              </div>
+
+              <button class="accordion">
+                5. How do I reset my password?
+              </button>
+              <div class="panel">
+                <p>
+                  The full monty cracking goal a blinding shot victoria sponge gutted mate. Amongst codswallop squiffy lost the plot up the duff lavatory barmy a blinding shot, such a fibber easy peasy cracking goal give.
+                </p>
+              </div>
+            </div>
         </div>
       </section>
+
       <section>
         <div>
           <p>Our Clients World-class protectiont.</p>
@@ -396,6 +517,34 @@
       </div>
       <p>@ 2021 All Copyright Reserved. Developed by BackTheme</p>
     </footer>
+
+    <script>
+      const acc = document.querySelectorAll(".accordion");
+
+      acc.forEach((button) => {
+        button.addEventListener("click", () => {
+          let panel = button.nextElementSibling;
+
+          // agar already open hai to close kar do
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+            button.classList.remove("active");
+          } else {
+            // sab accordion band karo
+            document
+              .querySelectorAll(".panel")
+              .forEach((p) => (p.style.maxHeight = null));
+            document
+              .querySelectorAll(".accordion")
+              .forEach((a) => a.classList.remove("active"));
+
+            // ab current open karo
+            button.classList.add("active");
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      });
+    </script>
     <script src="./bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
