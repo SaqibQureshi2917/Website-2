@@ -50,7 +50,7 @@
         <!-- yaha se jum navbar banayenge wo b humne bootstrip se utaya he  -->
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
           <div class="container-fluid container">
-            <a class="navbar-brand" href="#">Kbiz</a>
+            <a id="nav-logo" class="navbar-brand" href="#"><h1>Kbiz.</h1></a>
             <button
               class="navbar-toggler"
               type="button"
@@ -581,21 +581,25 @@
           </p>
         </div>
         <div>
-          <a href="#"><button>Get Started for Free</button></a>
+          <a href="#"
+            ><button class="cta-button">Get Started for Free</button></a
+          >
         </div>
       </section>
     </main>
 
     <footer>
       <div id="footer-div">
-        <div class="footer-links">
-          <p>
+        <div id="footer-form-div" class="footer-links">
+          <h1 id="footer-logo">kibz.</h1>
+          <p id="form-top-pera">
             Beguiled and to demo realized by the <br />
             charms of pleasure moment.
           </p>
           <form action="#">
             <input type="email" id="email" placeholder="Email Address" />
-            <input type="submit" value="Subscribe" />
+            <br />
+            <input id="submit" type="submit" value="Subscribe" />
           </form>
           <p>We'll never share your details.</p>
         </div>
@@ -613,14 +617,31 @@
           <a href="#">News</a>
           <a href="#">Contact</a>
         </div>
-        <div class="footer-links">
-          <p>Contact</p>
-          <a href="#">+(462) 425 76 332</a>
-          <a href="mailto:info@yourdmain.com">info@yourdmain.com</a>
-          <p>480 Williams K Qanning Blvd, <br />Falls MA 3725, USA.</p>
+        <div id="footer-address" class="footer-links">
+          <p id="contact-footer">Contact</p>
+          <a href="#">
+            <img src="./Assets/footer-section/phone.svg" alt="" /> +(462) 425 76
+            332</a
+          >
+          <a href="mailto:info@yourdmain.com">
+            <img src="./Assets/footer-section/mail.svg" alt="" />
+            info@yourdmain.com</a
+          >
+          <p id="adrs">
+            <img src="./Assets/footer-section/map.svg" alt="" /> 480 Williams K
+            Qanning Blvd, <br />Falls MA 3725, USA.
+          </p>
+          
         </div>
       </div>
-      <p>@ 2021 All Copyright Reserved. Developed by BackTheme</p>
+      <div id="Copyright-div">
+        <p>@ 2021 All Copyright Reserved. Developed by BackTheme</p>
+        <div id="footer-icons">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i> </a>
+            <a href="#"> <i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+      </div>
     </footer>
 
     <script>
